@@ -1,0 +1,40 @@
+#container {
+    background-color: #bae1ff;
+    width: 1600px;
+    line-height: normal;
+}
+#header {
+     color: aliceblue;
+    background-color: #239eff;
+    border-radius: 50%;
+    width: 900px;
+    text-align: center;
+    margin-left: 300px;
+    font-size: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    
+}
+
+#content {
+
+    margin-left: 60px;
+    margin-top: 90px;
+   
+}
+
+.product {
+    width: 350px;
+    height: 510px;
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 60px;
+    border: 10px solid #93d0ff;
+    margin-left: 100px;
+
+}
+
+.product img {
+
+    width: 100%;
+}
