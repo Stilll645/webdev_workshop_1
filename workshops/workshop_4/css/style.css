@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box; /* padding wil count in with width */
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e316b;
+    margin: 0; /*removes the outer white part*/
+}
+
+#container {
+    width: 960px;
+    margin: 0 auto; /* Top and bottom 0, left and richt are equal*/
+}
+
+/*header*/
+#header {
+    background-color: #c7ddff;
+    color: #0e316b;
+    height: 100px;
+    text-align: center; /*text in the middle*/
+    font-size: 32px;
+    line-height: 100px; /*text vertical in the middle, same goes for height*/
+}
+
+/* background of webshop */
+#content {
+    background-color: #6c9ae4;
+    padding: 20px; /*20 pixels of space against all the sides, inside the block*/
+}
+
+/* the block around the products */
+.product {
+    border: 1px solid #0e316b;
+    padding: 10px; /*spaces inside of each product*/
+    margin-bottom: 20px;
+}
+
+/* product images */
+.product img {
+    width: 200px; /*all photos are as wide*/
+}
+
+/* prices */
+.prijs {
+    color: rgb(177, 215, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#footer {
+    background-color: aliceblue;
+    color: #0e316b;
+    padding: 20px;
+    text-align: center;
+}
+
+.producten {
+    display: flex;
+    gap: 20px;
+}
+
