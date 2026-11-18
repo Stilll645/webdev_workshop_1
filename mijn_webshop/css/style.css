@@ -1,42 +1,89 @@
+* {
+    box-sizing: border-box; /* padding wil count in with width */
+}
+
+.producten {
+    display: flex;
+    flex-wrap: wrap; /*if it doesn't fit then it'll go to the next line*/
+    gap: 20px;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e316b;
+    margin: 0; /*removes the outer white part*/
+    background-color: #f4f4f4;
+}
 
 #container {
-    background-color: #bae1ff;
-    width: 1600px;
-    line-height: normal;
-    height: 1600px;
+    width: 960px;
+    margin: 0 auto; /* Top and bottom 0, left and richt are equal*/
+    
 }
 
-/* Logo */
+/*header*/
 #header {
-     color: aliceblue;
-    background-color: #239eff;
-    border-radius: 50%;
-    width: 900px;
-    text-align: center;
-    margin-left: 300px;
-    font-size: 100px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #c7ddff;
+    color: #0e316b;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 50px;
+    height: 100px;
+    
 }
-
-
-/*all images selected*/
-#content {
-
-    margin-left: 60px;
-    margin-top: 40px;
-   
-}
-/*each seperate image*/
+/* the block around the products */
 .product {
-    width: 350px;
-    height: 600px;
-    vertical-align: top;
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 60px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+    width: 293px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;      /* afgeronde hoeken */
+    padding: 15px;
+    background-color: #ffffff;
+    
 }
+
+/* background of webshop */
+#content {
+    background-color: #6c9ae4;
+    padding: 40px; /*20 pixels of space against all the sides, inside the block*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* product images */
+.product img {
+    width: 100%; /*all photos are as wide*/
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* prices */
+.prijs {
+    color: rgb(177, 215, 255);
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
 #footer {
-    margin-left: 1350px;
+    background-color: aliceblue;
+    color: #0e316b;
+    padding: 20px;
+    text-align: center;
+}
+
+.knop {
+    display: inline-block;
+    background-color: #c0d8ff;
+    color: #0e316b;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none; /*no underline underneath the link*/
+}
+
+.knop:hover {
+    background-color: #24529c; /*goes darker if u go over it*/
 }
