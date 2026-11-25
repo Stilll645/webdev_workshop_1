@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <link rel="bestelPagina" href="bestellen.html">
+
+    <style>
+    
+        #collectable-bg {
+           background-color: #b5e4b3;
+            border-radius: 25px;
+            margin-top: 100px;
+            width: 20%;
+            padding: 50px;
+            text-align: center;
+        }
+
+        #product { /*selects the HTML element with id=product*/
+            display: flex; /*Places the two product containers next to eachother */
+            align-items: center; /*vertically centres the image and information*/
+            gap: 40px; /*adds 40 pixels of spaces between them*/
+
+            background-color: #fff2db;
+            padding: 50px; /*makes space inside the card*/
+            border-radius: 25px; /*makes the corners rounded*/
+            margin: 30px; /*creates the space outside the card*/
+        }
+    
+        #product-image img {
+            flex: 0, 0, 40%; /*tells flexbox that the image container should take up 40% of the available space.*/
+
+            width: 100%; /*makes the image fill whatever space is left*/
+            max-width: none; 
+            height: 500px; /*makes the image area 500 pixels tall*/
+            object-fit: contain; /*makes sure the entire image stays visible without stretching or distorting it*/
+            border-radius: 15px; 
+            display: block; /*removes the little inline-image spacing underneath it*/
+        }
+        
+        #product-info {
+            flex: 1; /*Tells the information container to take up all the remaining available space*/
+            margin-top: -100px;
+            color: #744a00;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+ 
+        /* Product pricing info*/
+        #product-price {
+            border-radius: 25px;
+            font-size: 25px;
+            width: 150px;
+            align-items: center;
+            color: #d88900;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /*about product*/
+
+        #product-description {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            width: 650px;
+        }
+
+        /*collectable sign*/
+        #collectable {
+            font-size: 18px;
+            color: #08b300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          
+      
+        }
+
+    </style>
+
+</head>
+
+<!-- Background Color-->
+<body style="background-color: #ff8c07">
+  
+    <a href="index.html">&larr; Terug naar alle Nendoroids</a>
+    
+        <h1>NendoroidSpot</h1> <!-- header -->
+
+    <div id="product">
+ 
+        <!--Image-->
+        <div id="product-image">
+            <img src="images/ichigo.png" alt="ichigo" width="400">
+        </div>
+
+
+        <!-- Ichigo Heading -->
+        <div id="product-info">
+            <h2>Ichigo Nendoroid</h2>
+
+            <!-- Price -->
+            <div id="product-price">
+                    <p>&euro; 34,99</p>    
+            </div>
+ 
+            <!-- Description -->
+            <div id="product-description">
+                <p>A stylized chibi figure featuring Ichigo's iconic orange hair, Soul Reaper uniform and Zanpakutō.</p>
+            </div>
+            
+            
+            <div id="collectable-bg">
+            <div id="collectable">
+                <p>Collectable Item</p>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="knopBestel">
+            <a href="bestellen.html" class="knopBestel">Bestel</a>
+        </div>
+
+     </div>
+
+</body>
+</html>

@@ -82,6 +82,7 @@
   
     <a href="index.html">&larr; Terug naar alle Nendoroids</a>
     
+    <?php include "includes/header.php"; ?>
         <h1>NendoroidSpot</h1> <!-- header -->
 
     <div id="product">
@@ -114,6 +115,13 @@
         </div>
 
         </div>
+
+
+                <div class="knopBestel">
+            <a href="bestellen.html" class="knopBestel">Bestel</a>
+        </div>
+
+     </div>
 
 
      </div>

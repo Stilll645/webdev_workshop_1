@@ -1,0 +1,134 @@
+
+/* for images */
+* {
+    box-sizing: border-box; /* padding wil count in with width */
+}
+
+.producten {
+    display: flex;
+    flex-wrap: wrap; /*if it doesn't fit then it'll go to the next line*/
+    gap: 20px;
+}
+
+/* my text font for the header, prices and nen names */
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #0e316b;
+    margin: 0; /*removes the outer white part*/
+    background-color: #f4f4f4;
+}
+
+/* makes it that the pictures are 3 in a row*/
+#container {
+    width: 960px;
+    margin: 0 auto; /* Top and bottom 0, left and richt are equal*/
+    
+}
+
+/*header*/
+#header {
+    background-color: #c7ddff;
+    color: #0e316b;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 100px;
+ 
+}
+/* the block around the products */
+.product {
+    width: 293px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;      /* afgeronde hoeken */
+    padding: 15px;
+    background-color: #ffffff;
+    
+}
+
+/* background of webshop and also allows the boxes to be next to eachother*/
+#content {
+    background-color: #6c9ae4;
+    padding: 40px; /*20 pixels of space against all the sides, inside the block*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* product images */
+.product img {
+    width: 100%; /*all photos are as wide*/
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+
+/* footer (bottom part)  */
+#footer {
+    background-color: aliceblue;
+    color: #0e316b;
+    padding: 20px;
+    text-align: center;
+}
+
+/* buttons bekijk for the product */
+.knop {
+    display: inline-block;
+    background-color: #c0d8ff;
+    color: #0e316b;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none; /*no underline underneath the link*/
+}
+
+.knop:hover {
+    background-color: #24529c; /*goes darker if u go over it*/
+}
+
+/* max width for formulier */
+.formulier {
+    max-width: 400px;
+}
+
+/* every field has a lable in the inputbox, space under */
+.veld {
+    margin-bottom: 15px;
+}
+
+
+.veld label {
+    display: block;    /*lable on it's own line */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+/*every inputbox are as wide */
+.veld input,
+.veld select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Vinkje and lable next to eachother */
+.vinkje {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.vinkje input {
+    width: auto;
+}
+
+
+input.knop {
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}

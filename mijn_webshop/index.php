@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Page</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        
+        <div id="container">
+            <?php include "includes/header.php"; ?>
+            <div id="header"><h1>NendoroidSpot</h1>
+
+            <ul id="menu">
+                <li><a href="index.html">Producten</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            </div>
+
+
+            <div id="content">
+                <!-- Ichigo -->
+                <div class="product">
+                    <img src="images/ichigo.png" alt="ichigo" width="400">
+                    <h2>Ichigo Nendoroid</h2>
+                    <p>&euro; 39,99</p>
+                    <a href="detail.html"class="knop">Bekijk</a>
+                </div>
+                
+                
+                <!-- Toshiro -->
+                <div class="product">
+                    <img src="images/Toshiro.png" alt="Toshiro" width="347">
+                    <h2>Toshiro Nendoroid</h2>
+                    <p>&euro; 34,99</p>
+                    <a href="detail1.html"class="knop">Bekijk</a>
+                </div>
+                
+                
+                <!-- Sebastian -->
+                <div class="product">
+                    <img src="images/Sebastian.png" alt="Sebastian" width="319">
+                    <h2>Sebastian Nendoroid</h2>
+                    <p>&euro; 89,99</p>
+                    <a href="detail2.html" class="knop">Bekijk</a>                        
+                </div>
+                
+                
+                <!-- Ciel -->
+                <div class="product">
+                    <img src="images/Ciel.png" alt="Ciel" width="347">
+                    <h2>Ciel Nendoroid</h2>
+                    <p>&euro; 69,99</p>
+                    <a href="detail3.html"class="knop">Bekijk</a>                        
+                </div>
+                
+                
+                <!-- Tomoko -->
+                <div class="product">
+                    <img src="images/Tomoko.png" alt="Tomoko" width="320">
+                    <h2>Tomoko Nendoroid</h2>
+                    <p>&euro; 119,99</p>
+                    <a href="detail4.html"class="knop">Bekijk</a>                        
+                </div>
+                
+                
+                <!-- Sonico -->
+                <div class="product">
+                    <img src="images/Sonico.png" alt="Sonico" width="346">
+                    <h2>Sonico Nendoroid</h2>
+                    <p>&euro; 79,99</p>
+                    <a href="detail5.html"class="knop">Bekijk</a>                        
+                </div>
+            </div> <!-- einde content -->
+            
+            <div id="footer">&copy; <?php echo date("Y"); ?> @2026 NendoroidSpot</div> <!-- echo places something on the page, date("Y") is the current year number, next year it'll change itsself-->
+        <?php include "includes/footer.php"; ?>
+        </div>
+        
+        
+    </body>
+    </html>
