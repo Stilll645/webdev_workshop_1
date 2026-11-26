@@ -1,33 +1,12 @@
-<!DOCTYPE html>
-<html lang="nl">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Page</title>
-        <link rel="stylesheet" href="css/style.css">
-
-    </head>
-    <body>
-        
-        <div id="container">
-            <?php include "includes/header.php"; ?>
-            <div id="header"><h1>NendoroidSpot</h1>
-
-            <ul id="menu">
-                <li><a href="index.html">Producten</a></li>
-                <li><a href="#">Over ons</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            </div>
-
-
-            <div id="content">
+<?php
+include "includes/header.php";
+?>
                 <!-- Ichigo -->
                 <div class="product">
                     <img src="images/ichigo.png" alt="ichigo" width="400">
                     <h2>Ichigo Nendoroid</h2>
                     <p>&euro; 39,99</p>
-                    <a href="detail.html"class="knop">Bekijk</a>
+                    <a href="detail.php"class="knop">Bekijk</a>
                 </div>
                 
                 
@@ -74,12 +53,7 @@
                     <p>&euro; 79,99</p>
                     <a href="detail5.html"class="knop">Bekijk</a>                        
                 </div>
-            </div> <!-- einde content -->
-            
-            <div id="footer">&copy; <?php echo date("Y"); ?> @2026 NendoroidSpot</div> <!-- echo places something on the page, date("Y") is the current year number, next year it'll change itsself-->
-        <?php include "includes/footer.php"; ?>
-        </div>
-        
-        
-    </body>
-    </html>
+           
+                <?php
+                include "includes/footer.php";
+                ?>
