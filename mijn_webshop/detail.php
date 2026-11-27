@@ -17,7 +17,7 @@
 
             <!-- Price -->
             <div id="product-price">
-                    <p>&euro; 34,99</p>    
+                    <p>&euro; 39,99</p>    
             </div>
  
             <!-- Description -->
